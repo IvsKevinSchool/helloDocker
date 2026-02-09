@@ -14,8 +14,10 @@ spec:
     spec:
       containers:
       - name: hellodocker-deployment
-        image: jamesndubuisi/hellodocker
-        imagePullPolicy: IfNotPresent
+        # CAMBIO AQUÍ: Ahora apunta a tu usuario
+        image: ivskevinschool2/hellodocker:latest
+        # RECOMENDACIÓN: Cámbialo a Always para que siempre baje tu versión nueva
+        imagePullPolicy: Always 
         ports:
         - containerPort: 80
 
